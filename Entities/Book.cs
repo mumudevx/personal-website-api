@@ -12,6 +12,9 @@ public class Book : Entity
     public int Pages { get; set; }
     public string? Comment { get; set; }
     public float? Rating { get; set; }
+    
+    public Guid FeaturedImageId { get; set; }
+    public ImageFile FeaturedImage { get; set; } = null!;
 
     public DateTime StartReadingDate { get; set; }
     public DateTime? EndReadingDate { get; set; }

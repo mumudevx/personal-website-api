@@ -1,3 +1,7 @@
+using Microsoft.Extensions.Localization;
+
+[assembly: RootNamespace("Web.Api")]
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();

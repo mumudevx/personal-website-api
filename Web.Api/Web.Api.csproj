@@ -7,17 +7,21 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="FluentValidation" Version="11.10.0" />
+        <PackageReference Include="MediatR" Version="12.4.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Features\BlogPost\" />
-      <Folder Include="Features\Book\" />
-      <Folder Include="Features\HealthActivity\" />
-      <Folder Include="Features\ImageFile\" />
-      <Folder Include="Features\PhotoGallery\" />
-      <Folder Include="Features\PhotoItem\" />
+      <ProjectReference Include="..\Core\Core.csproj" />
+      <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+      <ProjectReference Include="..\Entities\Entities.csproj" />
     </ItemGroup>
 
 </Project>

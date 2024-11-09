@@ -5,10 +5,12 @@ namespace Web.Api.Constants.Messages;
 public class PropertyValidationMessages(IStringLocalizer<PropertyValidationMessages> localize)
 {
     // General
+    public string IdRequired => localize["IdRequired"];
     public string TitleRequired => localize["TitleRequired"];
     public string TitleMaxLength => localize["TitleMaxLength"];
     public string ShortContentRequired => localize["ShortContentRequired"];
     public string ShortContentMaxLength => localize["ShortContentMaxLength"];
+    public string DescriptionMaxLength => localize["DescriptionMaxLength"];
     public string SlugRequired => localize["SlugRequired"];
     public string ContentRequired => localize["ContentRequired"];
     public string FeaturedImageRequired => localize["FeaturedImageRequired"];
@@ -28,8 +30,9 @@ public class PropertyValidationMessages(IStringLocalizer<PropertyValidationMessa
     public string ActionStartDateRequired => localize["ActionStartDateRequired"];
     public string ActionEndDateRequired => localize["ActionEndDateRequired"];
 
-    // PhotoGallery
+    // PhotoItem
     public string OrderRequired => localize["OrderRequired"];
+    public string OrderMinValue => localize["OrderMinValue"];
     public string PhotoGalleryIdRequired => localize["PhotoGalleryIdRequired"];
     public string ImageFileIdRequired => localize["ImageFileIdRequired"];
 }
