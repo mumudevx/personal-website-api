@@ -9,8 +9,8 @@ public class PersonalWebsiteContext(DbContextOptions<PersonalWebsiteContext> opt
 {
     private const string Server = "LiveServer";
     private const string DatabaseName = "LiveUser";
-    private const string User = "u7801466_user3F6";
-    private const string Password = "i-R.a9OZHd13k@5-";
+    private const string User = "LiveUser";
+    private const string Password = "LivePassword";
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
